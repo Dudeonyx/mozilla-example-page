@@ -15,7 +15,7 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #00539F;
+  color: #3E7AD0;
   text-shadow: 3px 4px 3px black;
 }
 h1:hover {
@@ -34,6 +34,12 @@ p:hover,li:hover {
 /*  width: 800px; */
 /*border: 1px dotted violet;> */
 }
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 img:hover {
   width:400px;
 }
