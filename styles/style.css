@@ -21,7 +21,7 @@ h1 {
 h1:hover {
     font-size: 80px;
     color:white;
-    text-shadow: 5px 6px 3px darkblue;
+    text-shadow: 6px 7px 3px darkblue;
   }
 p, li {
   font-size: 16px;
