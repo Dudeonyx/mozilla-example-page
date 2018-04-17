@@ -1,12 +1,40 @@
-var m = 0
 var myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
-if(m<3) {
-document.querySelector('html').onclick = function() {
-    alert('Ouch! Stop poking me!');
-    m = m + 1;
+var myButton = document.querySelector('button');
+var myImage = document.querySelector('img');
+
+function setUserName() {
+  var myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.textContent = h1store + myName;
 }
+
+myButton.onclick = function() {
+  setUserName();
 }
-else {
-  alert("Just hover, don't click!");
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/firefox-icon.png') {
+      myImage.setAttribute ('src','images/Internet-chrome-icon.png');
+      var h1store = 'Chrome is cool, ';
+        myHeading.textContent = h1store;
+      if(!localStorage.getItem('name')) {
+        setUserName();
+      } else {
+        var storedName = localStorage.getItem('name');
+        myHeading.textContent = h1store + storedName;
+      }
+    }
+    else {
+      myImage.setAttribute ('src','images/firefox-icon.png');
+      var h1store = 'Mozilla is cool, ';
+      myHeading.textContent = h1store;
+        if(!localStorage.getItem('name')) {
+        setUserName();
+        }
+        else {
+        var storedName = localStorage.getItem('name');
+        myHeading.textContent = h1store + storedName;
+      }
+    }
 }
