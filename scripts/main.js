@@ -1,7 +1,7 @@
 var myHeading = document.querySelector('h1');
 var myButton = document.querySelector('button');
 var myImage = document.querySelector('img');
-
+var h1store = 'Mozilla is cool, '
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
