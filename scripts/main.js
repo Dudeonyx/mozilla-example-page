@@ -16,7 +16,7 @@ myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/firefox-icon.png') {
       myImage.setAttribute ('src','images/Internet-chrome-icon.png');
-      myImage.setAttribute ('alt','The Chrome logo: A circle with red,yellowgreen and blue');
+      myImage.setAttribute ('alt','The Chrome logo: A circle with a blue centre and red,yellow,green portions');
       var h1store = 'Chrome is cool, ';
         myHeading.textContent = h1store;
       if(!localStorage.getItem('name')) {
