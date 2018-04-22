@@ -16,6 +16,7 @@ myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/firefox-icon.png') {
       myImage.setAttribute ('src','images/Internet-chrome-icon.png');
+      myImage.setAttribute ('alt','The Chrome logo: A circle with red,yellowgreen and blue');
       var h1store = 'Chrome is cool, ';
         myHeading.textContent = h1store;
       if(!localStorage.getItem('name')) {
@@ -27,6 +28,7 @@ myImage.onclick = function() {
     }
     else {
       myImage.setAttribute ('src','images/firefox-icon.png');
+      myImage.setAttribute ('alt','The Firefox logo: a flaming fox surrounding the Earth.');
       var h1store = 'Mozilla is cool, ';
       myHeading.textContent = h1store;
         if(!localStorage.getItem('name')) {
